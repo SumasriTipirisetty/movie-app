@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-
+import { useParams } from 'react-router-dom';
 const ApiKey = '82703bde347abd1cddce530db029c8ef';
 const BaseUrl = 'https://api.themoviedb.org/3';
 
@@ -14,9 +14,11 @@ class SingleMovieDetail extends Component {
       error: null,
     };
   }
-
+  
   async componentDidMount() {
     const { match } = this.props;
+    
+    console.log(match);
     if (!match || !match.params || !match.params.movieId) {
       console.error('Movie ID not found in URL params');
       return;
@@ -24,6 +26,8 @@ class SingleMovieDetail extends Component {
     const movieId = match.params.movieId;
 
     try {
+      console.log(movieId);
+      
       const response = await axios.get(`${BaseUrl}/movie/${movieId}?api_key=${ApiKey}&language=en-US`);
       const castResponse = await axios.get(`${BaseUrl}/movie/${movieId}/credits?api_key=${ApiKey}&language=en-US`);
       this.setState({
