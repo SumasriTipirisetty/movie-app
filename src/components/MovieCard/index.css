@@ -1,0 +1,22 @@
+/* Add your CSS styles for MovieCard component here */
+.movie-card {
+    border: none solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .movie-card h3 {
+    margin: 10px 0;
+  }
+  
+  .movie-card p {
+    font-size: 14px;
+  }
+  

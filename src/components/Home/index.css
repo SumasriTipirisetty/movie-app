@@ -1,0 +1,32 @@
+/* Add your CSS styles for Home component here */
+.home-container {
+    background-color: #808080;
+    padding: 20px;
+  }
+  
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .movie-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .movie-card h3 {
+    margin: 10px 0;
+  }
+  
+  .movie-card p {
+    font-size: 14px;
+  }
+  

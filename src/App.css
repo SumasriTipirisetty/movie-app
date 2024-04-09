@@ -1,0 +1,33 @@
+/* Add your global CSS styles for App component here */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #D3D3D3;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: #555;
+}
+
+.app-content {
+  flex-grow: 1;
+  padding: 20px;
+}
