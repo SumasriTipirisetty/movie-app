@@ -1,8 +1,75 @@
 .single-movie-container {
-    padding: 20px;
-  }
-  
-  .single-movie-container img {
-    max-width: 100%;
-    height: auto;
-  }
+  display: flex;
+  background-color: #808080;
+  padding: 20px;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.movie-details {
+  width: 45%;
+}
+
+.over {
+  width: 100%;
+}
+
+.movie-details img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.im {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cast-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction:row;
+}
+
+.cast-image {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cast-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.cast-info {
+  padding: 10px;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+}
+
+.cast-name,
+.cast-character {
+  margin: 0;
+  text-align: center;
+}
+.whole{
+  display:flex;
+  flex-direction:column;
+}
