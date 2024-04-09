@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import MovieCard from '../MovieCard';
 import axios from 'axios';
+import { Link } from 'react-router-dom'; // Added Link import
 import './index.css';
 const ApiKey = '82703bde347abd1cddce530db029c8ef';
 const BaseUrl = 'https://api.themoviedb.org/3';
@@ -40,7 +40,11 @@ class Home extends Component {
         <h2>Popular Movies</h2>
         <div className="movie-list">
           {movies.map((movie) => (
-            <MovieCard key={movie.id} movie={movie} />
+            <Link to={`/movie/${movie.id}`} key={movie.id} className="movie-card">
+              <img src={`${ImageBasePath}${movie.poster_path}`} alt={movie.title} />
+              <h3>{movie.title}</h3>
+              <p>{movie.overview}</p>
+            </Link>
           ))}
         </div>
       </div>
